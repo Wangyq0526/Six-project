@@ -1,0 +1,110 @@
+@import "../../css/base";
+
+
+.home_section {
+  padding-top: 40px;
+
+  .title_nav {
+    text-align: center;
+    font-size: 28px;
+    color: #780000;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+  }
+
+  .content_nav {
+    position: relative;
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+      position: absolute;
+      top: -50px;
+      right: 0;
+      color: #400000;
+    }
+  }
+
+  ul{
+    list-style: none;
+    display: flex;
+
+
+    .t_card {
+      margin-top: 50px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 400px;
+      height: 180px;
+      display: flex;
+      background-color: white;
+      box-shadow: 0 0 8px 0 rgba(0,0,0,.15);
+
+      .left {
+        flex: 1;
+        //background-color: green;
+        position: relative;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+
+          .teacher {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .t_teacher {
+              width: 150px;
+              height: 150px;
+              border-radius: 75px;
+              border: 5px solid white;
+              box-shadow: 0 0 15px 0 rgba(0, 0, 0, .15);
+            }
+
+            .t_name {
+              width: 150px;
+              height: 30px;
+              line-height: 30px;
+              border-radius: 15px;
+              text-align: center;
+              margin-top: 5px;
+              background-color: @theme_color;
+            }
+          }
+        }
+      }
+
+      .right {
+        margin-left: 10px;
+        flex: 1;
+        //background-color: blue;
+        padding: 10px;
+        .t_tag{
+          text-align: center;
+          font-size: 20px;
+          line-height: 40px;
+          color: #51b257;
+          font-weight: 700;
+          border-bottom: 2px solid #51b257;
+        }
+        .t_desc{
+          text-align: center;
+          font-size: 20px;
+          line-height: 40px;
+
+        }
+      }
+    }
+  }
+
+
+
+
+}
